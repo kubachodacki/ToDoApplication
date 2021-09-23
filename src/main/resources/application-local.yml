@@ -1,0 +1,14 @@
+spring:
+  h2.console:
+    enabled: true
+    path: '/console'
+  datasource:
+    url: 'jdbc:h2:mem:4027f366-1ef0-4d88-bf76-e7ce93029fcb'
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: '*'
